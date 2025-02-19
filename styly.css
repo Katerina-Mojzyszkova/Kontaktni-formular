@@ -40,4 +40,31 @@ textarea {
   width: 200px;
   color: #bbb;
   border-radius: 24px;
+  outline: none; /* žádný rámeček u označení políčka*/
+}
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+textarea:focus {
+  transition: 0.25s;
+  width: 280px;
+  border-color: #f05454;
+}
+
+.box input[type="submit"] {
+  background: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #f05454;
+  padding: 14px 40px;
+  width: 200px;
+  outline: none;
+  color: #fff;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+  background: #f05454;
 }
