@@ -1,0 +1,43 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #214252;
+}
+
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*převedu to na střed - přímo do středu! */
+  background: #191919;
+  text-align: center;
+}
+
+.box h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500; /* netučný text, 800 tučný*/
+}
+
+.box input[type="text"],
+.box input[type="email"],
+textarea {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #214252;
+  padding: 15px 10px;
+  width: 200px;
+  color: #bbb;
+  border-radius: 24px;
+}
