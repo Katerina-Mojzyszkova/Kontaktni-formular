@@ -8,7 +8,7 @@
 
     // Kontroluje data popř. přesměruje na chybovou adresu, doplnit!!!(zaměnit jen domenu)
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://www.dopln.cz/index.html?success=-1#form");
+        header("Location: index.php?success=1");
         exit;
     }
 
@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Přesměrování na stránku, pokud vše proběhlo v pořádku, doplnit!!!(zaměnit jen domenu)
-    header("Location:https://www.dopln.cz/index.html?success=1#form");
+    header("Location: index.php?success=1");
 
 ?>

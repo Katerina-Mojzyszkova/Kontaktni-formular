@@ -68,3 +68,21 @@ textarea:focus {
 .box input[type="submit"]:hover {
   background: #f05454;
 }
+
+/* Form result */
+
+.form-result {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.success {
+  background: #2ecc71;
+}
+
+.error {
+  background: #e74c3c;
+}
